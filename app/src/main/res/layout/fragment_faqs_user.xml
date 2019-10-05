@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/FAQ_heading"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StudBud Support"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/enroll_Button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Enroll in a course"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.08" />
+
+        <TextView
+            android:id="@+id/enroll_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="To take a course on Coursera, you'll need to enroll.
+
+When you enroll in a course, you'll be able to start right away.
+
+If you're in a Coursera for Business Learning Programs, enrollment works differently. Learn about enrolling in courses in a Coursera for Business program.
+To enroll in a course:
+
+Open the course information page by clicking on the course title from the Coursera catalog.
+Click Enroll.
+Follow the instructions to enroll in the course. You may have the option for a free trial.
+If you want to audit the course instead, look for the Audit option on the course page. Not all courses include this option.
+
+See courses you're enrolled in
+You can see all the courses you're enrolled in from your Coursera home page.
+
+To see all your course enrollments:
+
+Open coursera.org. Make sure you're logged in.
+On the left sidebar, click Enrollments.
+Re-take a course
+If you want to take a course again, you can re-take quizzes and exams and re-do assignments. Only your most recent grade will be counted. You can’t delete your coursework or reset your progress in a course you’ve already started."
+            app:layout_constraintHorizontal_bias="0.715"
+            app:layout_constraintLeft_toLeftOf="@id/enroll_Button"
+            app:layout_constraintRight_toRightOf="@id/enroll_Button"
+            app:layout_constraintTop_toBottomOf="@id/enroll_Button" />
+
+        <Button
+            android:id="@+id/about_Info_Button"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:text="Why opt for StudBud"
+            app:layout_constraintTop_toBottomOf="@id/enroll_data"
+            app:layout_constraintLeft_toLeftOf="@id/enroll_Button"
+            app:layout_constraintRight_toRightOf="@id/enroll_Button"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/opt_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="To take a course on Coursera, you'll need to enroll.
+
+When you enroll in a course, you'll be able to start right away.
+
+If you're in a Coursera for Business Learning Programs, enrollment works differently. Learn about enrolling in courses in a Coursera for Business program.
+To enroll in a course:
+
+Open the course information page by clicking on the course title from the Coursera catalog.
+Click Enroll.
+Follow the instructions to enroll in the course. You may have the option for a free trial.
+If you want to audit the course instead, look for the Audit option on the course page. Not all courses include this option.
+
+See courses you're enrolled in
+You can see all the courses you're enrolled in from your Coursera home page.
+
+To see all your course enrollments:
+
+Open coursera.org. Make sure you're logged in.
+On the left sidebar, click Enrollments.
+Re-take a course
+If you want to take a course again, you can re-take quizzes and exams and re-do assignments. Only your most recent grade will be counted. You can’t delete your coursework or reset your progress in a course you’ve already started."
+            app:layout_constraintHorizontal_bias="0.715"
+            app:layout_constraintLeft_toLeftOf="@id/enroll_Button"
+            app:layout_constraintRight_toRightOf="@id/enroll_Button"
+            app:layout_constraintTop_toBottomOf="@id/about_Info_Button" />
+
+
+        <Button
+            android:id="@+id/account_Issues"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Why opt for StudBud"
+            app:layout_constraintTop_toBottomOf="@id/opt_data"
+            app:layout_constraintLeft_toLeftOf="@id/about_Info_Button"
+            app:layout_constraintRight_toRightOf="@id/about_Info_Button"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/issues_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="To take a course on Coursera, you'll need to enroll.
+
+When you enroll in a course, you'll be able to start right away.
+
+If you're in a Coursera for Business Learning Programs, enrollment works differently. Learn about enrolling in courses in a Coursera for Business program.
+To enroll in a course:
+
+Open the course information page by clicking on the course title from the Coursera catalog.
+Click Enroll.
+Follow the instructions to enroll in the course. You may have the option for a free trial.
+If you want to audit the course instead, look for the Audit option on the course page. Not all courses include this option.
+
+See courses you're enrolled in
+You can see all the courses you're enrolled in from your Coursera home page.
+
+To see all your course enrollments:
+
+Open coursera.org. Make sure you're logged in.
+On the left sidebar, click Enrollments.
+Re-take a course
+If you want to take a course again, you can re-take quizzes and exams and re-do assignments. Only your most recent grade will be counted. You can’t delete your coursework or reset your progress in a course you’ve already started."
+            app:layout_constraintHorizontal_bias="0.715"
+            app:layout_constraintLeft_toLeftOf="@id/enroll_Button"
+            app:layout_constraintRight_toRightOf="@id/enroll_Button"
+            app:layout_constraintTop_toBottomOf="@id/account_Issues" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

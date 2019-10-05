@@ -64,7 +64,7 @@ public class Login_Activity extends AppCompatActivity {
                                 startActivity(i);
                                 View inflatedView = getLayoutInflater().inflate(R.layout.nav_header_main, null);
                                 TextView text =  inflatedView.findViewById(R.id.username);
-                                TextView  text1=inflatedView.findViewById(R.id.displayEmail);
+                                TextView  text1=inflatedView.findViewById(R.id.email_reg);
                                 text.setText(email.getText().toString());
                                 // text1.setText(landmark.getText().toString());
                             }

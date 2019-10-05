@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment {
                 // Start new list activity
                 public void onClick(View v) {
                     Intent mainIntent = new Intent(getActivity(),
-                            Quiz_Android_A.class);
+                            AndroidActivity.class);
                     startActivity(mainIntent);
                 }
             });
