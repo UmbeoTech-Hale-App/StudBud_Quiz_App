@@ -1,158 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_margin="30dp"
         android:layout_height="match_parent"
         tools:ignore="ExtraText">
 
         <TextView
             android:id="@+id/FAQ_heading"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:fontFamily="@font/worksansmedium"
             android:text="StudBud Support"
             android:textAlignment="center"
-            android:textSize="50dp"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-        <Button
-            android:id="@+id/enroll_Button"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Enroll in a course"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.08" />
+            android:textColor="#000"
+            android:textFontWeight="500"
+            android:textSize="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
 
         <TextView
-            android:id="@+id/enroll_data"
+            android:id="@+id/heading1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="To take a course on Coursera, you'll need to enroll.
+            android:layout_marginTop="25dp"
+            android:text="Practice Test FAQ's"
+            android:textAlignment="center"
+            android:fontFamily="@font/worksansregular"
+            android:textSize="25dp"
+            android:textFontWeight="700"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FAQ_heading">
 
-When you enroll in a course, you'll be able to start right away.
-
-If you're in a Coursera for Business Learning Programs, enrollment works differently. Learn about enrolling in courses in a Coursera for Business program.
-To enroll in a course:
-
-Open the course information page by clicking on the course title from the Coursera catalog.
-Click Enroll.
-Follow the instructions to enroll in the course. You may have the option for a free trial.
-If you want to audit the course instead, look for the Audit option on the course page. Not all courses include this option.
-
-See courses you're enrolled in
-You can see all the courses you're enrolled in from your Coursera home page.
-
-To see all your course enrollments:
-
-Open coursera.org. Make sure you're logged in.
-On the left sidebar, click Enrollments.
-Re-take a course
-If you want to take a course again, you can re-take quizzes and exams and re-do assignments. Only your most recent grade will be counted. You can’t delete your coursework or reset your progress in a course you’ve already started."
-            app:layout_constraintHorizontal_bias="0.715"
-            app:layout_constraintLeft_toLeftOf="@id/enroll_Button"
-            app:layout_constraintRight_toRightOf="@id/enroll_Button"
-            app:layout_constraintTop_toBottomOf="@id/enroll_Button" />
-
-        <Button
-            android:id="@+id/about_Info_Button"
-            android:layout_width="200dp"
-            android:layout_height="0dp"
-            android:text="Why opt for StudBud"
-            app:layout_constraintTop_toBottomOf="@id/enroll_data"
-            app:layout_constraintLeft_toLeftOf="@id/enroll_Button"
-            app:layout_constraintRight_toRightOf="@id/enroll_Button"
-            android:layout_marginTop="20dp"
-            />
+        </TextView>
 
         <TextView
-            android:id="@+id/opt_data"
+            android:id="@id/question1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="To take a course on Coursera, you'll need to enroll.
+            android:fontFamily="@font/worksansregular"
+            android:text="Q.1 Is there an additional charge to take the practice test?"
+            android:textColor="#000"
+            android:textFontWeight="700"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@id/heading1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
 
-When you enroll in a course, you'll be able to start right away.
-
-If you're in a Coursera for Business Learning Programs, enrollment works differently. Learn about enrolling in courses in a Coursera for Business program.
-To enroll in a course:
-
-Open the course information page by clicking on the course title from the Coursera catalog.
-Click Enroll.
-Follow the instructions to enroll in the course. You may have the option for a free trial.
-If you want to audit the course instead, look for the Audit option on the course page. Not all courses include this option.
-
-See courses you're enrolled in
-You can see all the courses you're enrolled in from your Coursera home page.
-
-To see all your course enrollments:
-
-Open coursera.org. Make sure you're logged in.
-On the left sidebar, click Enrollments.
-Re-take a course
-If you want to take a course again, you can re-take quizzes and exams and re-do assignments. Only your most recent grade will be counted. You can’t delete your coursework or reset your progress in a course you’ve already started."
-            app:layout_constraintHorizontal_bias="0.715"
-            app:layout_constraintLeft_toLeftOf="@id/enroll_Button"
-            app:layout_constraintRight_toRightOf="@id/enroll_Button"
-            app:layout_constraintTop_toBottomOf="@id/about_Info_Button" />
-
-
-        <Button
-            android:id="@+id/account_Issues"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Why opt for StudBud"
-            app:layout_constraintTop_toBottomOf="@id/opt_data"
-            app:layout_constraintLeft_toLeftOf="@id/about_Info_Button"
-            app:layout_constraintRight_toRightOf="@id/about_Info_Button"
-            android:layout_marginTop="20dp"
-
-            />
-
+        </TextView>
 
         <TextView
-            android:id="@+id/issues_data"
+            android:id="@+id/answer1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="To take a course on Coursera, you'll need to enroll.
+            android:fontFamily="@font/worksansregular"
+            android:text="No. If a course offers a practice test it will be included in the course purchase."
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/question1"
+            tools:ignore="MissingConstraints">
 
-When you enroll in a course, you'll be able to start right away.
+        </TextView>
 
-If you're in a Coursera for Business Learning Programs, enrollment works differently. Learn about enrolling in courses in a Coursera for Business program.
-To enroll in a course:
+        <TextView
+            android:id="@id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:fontFamily="@font/worksansregular"
+            app:layout_constraintTop_toBottomOf="@+id/answer1"
+            android:text="Q.2 How do I submit my answer for the question?"
+            android:textColor="#000"
+            android:textFontWeight="700"
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints">
 
-Open the course information page by clicking on the course title from the Coursera catalog.
-Click Enroll.
-Follow the instructions to enroll in the course. You may have the option for a free trial.
-If you want to audit the course instead, look for the Audit option on the course page. Not all courses include this option.
+        </TextView>
 
-See courses you're enrolled in
-You can see all the courses you're enrolled in from your Coursera home page.
+        <TextView
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:text="Once you've selected the answer you wish to enter, click on SUBMIT Button at the bottom right of the practice test screen."
+            android:textColor="#000"
+            app:layout_constraintTop_toBottomOf="@+id/question2"
+            android:fontFamily="@font/worksansregular"
 
-To see all your course enrollments:
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
 
-Open coursera.org. Make sure you're logged in.
-On the left sidebar, click Enrollments.
-Re-take a course
-If you want to take a course again, you can re-take quizzes and exams and re-do assignments. Only your most recent grade will be counted. You can’t delete your coursework or reset your progress in a course you’ve already started."
-            app:layout_constraintHorizontal_bias="0.715"
-            app:layout_constraintLeft_toLeftOf="@id/enroll_Button"
-            app:layout_constraintRight_toRightOf="@id/enroll_Button"
-            app:layout_constraintTop_toBottomOf="@id/account_Issues" />
+        </TextView>
+
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="Troubleshooting Issues FAQ's"
+            android:textAlignment="center"
+            android:fontFamily="@font/worksansregular"
+            android:textSize="24dp"
+            android:textFontWeight="700"
+            android:textColor="#000"
+            app:layout_constraintTop_toBottomOf="@+id/answer2"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/subheading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksansregular"
+            android:paddingTop="5dp"
+            android:text="Loading Issues"
+            android:textColor="#000"
+            android:textFontWeight="700"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/heading2"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:text="i)Try Restarting the StudBud App"
+            android:textColor="#000"
+            android:fontFamily="@font/worksansregular"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/subheading2"
+            tools:ignore="MissingConstraints">
+        </TextView>
+        <TextView
+            android:id="@+id/answer4"
+            android:layout_width="match_parent"
+            android:text="ii)Restart this device and your modem/router if you're on a WiFi Network."
+            android:textColor="#000"
+            android:fontFamily="@font/worksansregular"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/answer3"
+            tools:ignore="MissingConstraints">
+        </TextView>
+
+        <TextView
+            android:id="@+id/heading3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="Enrollment FAQ's"
+            android:textAlignment="center"
+            android:fontFamily="@font/worksansregular"
+            android:textSize="24dp"
+            android:textFontWeight="700"
+            app:layout_constraintTop_toBottomOf="@id/answer4"
+            android:textColor="#000"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/question5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksansregular"
+            android:paddingTop="5dp"
+            android:text="Q.1 How to enroll in a course?"
+            android:textColor="#000"
+            android:textFontWeight="700"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@id/heading3"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/answer5"
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:text="Explore the course you want to enroll and click on ENROLL COURSE Button to get enrolled in that particular course."
+            android:textColor="#000"
+            android:fontFamily="@font/worksansregular"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/question5"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
