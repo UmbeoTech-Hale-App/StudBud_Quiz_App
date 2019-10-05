@@ -6,19 +6,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.ankita.studbud.AIMLActivity;
 import com.ankita.studbud.AndroidActivity;
 import com.ankita.studbud.ProgrammingActivity;
+import com.ankita.studbud.Quiz_Android_A;
 import com.ankita.studbud.R;
-import com.ankita.studbud.Register_Student_Activity;
 
 public class HomeFragment extends Fragment {
 
@@ -56,7 +53,7 @@ public class HomeFragment extends Fragment {
                 // Start new list activity
                 public void onClick(View v) {
                     Intent mainIntent = new Intent(getActivity(),
-                            AndroidActivity.class);
+                            Quiz_Android_A.class);
                     startActivity(mainIntent);
                 }
             });
