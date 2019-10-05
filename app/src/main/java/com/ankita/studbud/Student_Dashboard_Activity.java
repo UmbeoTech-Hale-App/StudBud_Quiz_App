@@ -106,6 +106,14 @@ public class Student_Dashboard_Activity extends AppCompatActivity implements Nav
 
 
         if (id == R.id.profile_user) {
+            CardView card = findViewById(R.id.cardView_home_fragment);
+            card.setVisibility(View.GONE);
+            CardView card1 = findViewById(R.id.cardView2);
+            CardView card2 = findViewById(R.id.cardView3);
+            card1.setVisibility(View.GONE);
+            card2.setVisibility(View.GONE);
+
+            fragment=new Profile_fragment();
 
         }
         else if(id == R.id.home_dashboard){
