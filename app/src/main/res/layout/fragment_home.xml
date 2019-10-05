@@ -4,16 +4,112 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_home"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_height="128dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="30dp"
+        android:elevation="5dp"
+        android:layout_marginTop="36dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:id="@+id/image1"
+            android:layout_height="match_parent"
+            android:src="@drawable/aiml">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:alpha="0.7"
+            android:layout_marginTop="103dp"
+            android:textFontWeight="550"
+            android:paddingLeft="80dp"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:fontFamily="@font/worksansregular"
+            android:text="Artificial Intelligence">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:cardCornerRadius="10dp"
+
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/android">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:alpha="0.7"
+            android:layout_marginTop="104dp"
+            android:textFontWeight="550"
+            android:paddingLeft="120dp"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:fontFamily="@font/worksansregular"
+            android:text="Android">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/image3"
+            android:layout_height="wrap_content"
+            android:src="@drawable/proglang">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:alpha="0.7"
+            android:layout_marginTop="104dp"
+            android:textFontWeight="550"
+            android:paddingLeft="60dp"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:fontFamily="@font/worksansregular"
+            android:text="Programming Languages">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
