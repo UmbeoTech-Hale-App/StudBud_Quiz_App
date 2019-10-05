@@ -200,24 +200,25 @@
             android:text="Activity Manager" />
     </RadioGroup>
 
-    <!--<TextView
-        android:id="@+id/question2"
-        android:layout_width="338dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="32dp"
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:text="In android studio, callback that is called when activity interaction with user is started is"
+        android:text="A type of service provided by android that shows messages and alerts to user is"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf=""
-        app:layout_constraintTop_toBottomOf="@+id/question1" />-->
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question2" />
 
-
-    <!--<RadioGroup
-        android:id="@+id/question2_Radio"
+    <RadioGroup
+        android:id="@+id/question4"
         android:layout_width="346dp"
         android:layout_height="123dp"
         android:layout_marginStart="39dp"
@@ -227,94 +228,35 @@
         android:layout_marginRight="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/question2">
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
 
         <RadioButton
-            android:id="@+id/qr1"
+            android:id="@+id/t1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Content Providers" />
 
 
         <RadioButton
-            android:id="@+id/qr2"
+            android:id="@+id/t2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="View System" />
 
         <RadioButton
-            android:id="@+id/qr3"
+            android:id="@+id/t3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Notifications Manager" />
 
         <RadioButton
-            android:id="@+id/qr4"
+            android:id="@+id/t4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Activity Manager" />
     </RadioGroup>
--->
-<!--
-    <TextView
-        android:id="@+id/question3"
-        android:layout_width="338dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:text="In android studio, callback that is called when activity interaction with user is started is"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf=""
-        app:layout_constraintTop_toBottomOf="@+id/question2_Radio" />
--->
-<!--
 
-    <RadioGroup
-        android:id="@+id/question3_Radio"
-        android:layout_width="346dp"
-        android:layout_height="123dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginRight="26dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/question3">
-
-
-        <RadioButton
-            android:id="@+id/q1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Content Providers" />
-
-
-        <RadioButton
-            android:id="@+id/q2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="View System" />
-
-        <RadioButton
-            android:id="@+id/q3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Notifications Manager" />
-
-        <RadioButton
-            android:id="@+id/q4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Activity Manager" />
-    </RadioGroup>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
