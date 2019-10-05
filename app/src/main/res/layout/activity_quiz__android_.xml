@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+     android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Quiz_Android_A">
@@ -80,6 +87,118 @@
             android:text="Activity Manager" />
     </RadioGroup>
 
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="A type of service provided by android that shows messages and alerts to user is"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question1" />
+
+    <RadioGroup
+        android:id="@+id/question3"
+        android:layout_width="346dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+
+        <RadioButton
+            android:id="@+id/q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Content Providers" />
+
+
+        <RadioButton
+            android:id="@+id/q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View System" />
+
+        <RadioButton
+            android:id="@+id/q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications Manager" />
+
+        <RadioButton
+            android:id="@+id/q4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity Manager" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="A type of service provided by android that shows messages and alerts to user is"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question3" />
+
+    <RadioGroup
+        android:id="@+id/question2"
+        android:layout_width="346dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+        <RadioButton
+            android:id="@+id/qr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Content Providers" />
+
+
+        <RadioButton
+            android:id="@+id/qr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View System" />
+
+        <RadioButton
+            android:id="@+id/qr3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications Manager" />
+
+        <RadioButton
+            android:id="@+id/qr4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity Manager" />
+    </RadioGroup>
 
     <!--<TextView
         android:id="@+id/question2"
@@ -198,3 +317,4 @@
     </RadioGroup>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
