@@ -25,6 +25,7 @@ public class AIMLActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AIMLActivity.this, YoutubeActivity.class);
+                intent.putExtra("Course Id","AI:Course1");
                 startActivity(intent);
             }
         });
@@ -32,6 +33,7 @@ public class AIMLActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AIMLActivity.this, YoutubeActivity.class);
+                intent.putExtra("Course Id","AI-Course2");
                 startActivity(intent);
             }
         });
