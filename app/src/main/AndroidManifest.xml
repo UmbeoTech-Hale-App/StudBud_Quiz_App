@@ -10,8 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ChatForum"></activity>
-        <activity android:name=".Quiz2_activity" />
-        <activity android:name=".Quiz_Android_A" />
         <activity android:name=".ProgrammingActivity" />
         <activity android:name=".AndroidActivity" />
         <activity android:name=".YoutubeActivity" />

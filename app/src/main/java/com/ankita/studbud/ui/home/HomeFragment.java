@@ -14,7 +14,6 @@ import androidx.lifecycle.ViewModelProviders;
 import com.ankita.studbud.AIMLActivity;
 import com.ankita.studbud.AndroidActivity;
 import com.ankita.studbud.ProgrammingActivity;
-import com.ankita.studbud.Quiz_Android_A;
 import com.ankita.studbud.R;
 
 public class HomeFragment extends Fragment {
