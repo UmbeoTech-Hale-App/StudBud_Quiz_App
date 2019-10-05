@@ -47,5 +47,26 @@ public class HomeFragment extends Fragment {
                     startActivity(mainIntent);
                 }
             });
+
+            android = (ImageView) getView().findViewById(R.id.AndroidImage);
+            // set a onclick listener for when the button gets clicked
+            android.setOnClickListener(new View.OnClickListener() {
+                // Start new list activity
+                public void onClick(View v) {
+                    Intent mainIntent = new Intent(getActivity(),
+                            AIMLActivity.class);
+                    startActivity(mainIntent);
+                }
+            });
+            progLang = (ImageView) getView().findViewById(R.id.ProgLangImage);
+            // set a onclick listener for when the button gets clicked
+            progLang.setOnClickListener(new View.OnClickListener() {
+                // Start new list activity
+                public void onClick(View v) {
+                    Intent mainIntent = new Intent(getActivity(),
+                            AIMLActivity.class);
+                    startActivity(mainIntent);
+                }
+            });
         }
     }
