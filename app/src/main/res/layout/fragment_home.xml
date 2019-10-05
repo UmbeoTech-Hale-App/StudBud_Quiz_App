@@ -19,7 +19,7 @@
 
         <ImageView
             android:layout_width="350dp"
-            android:id="@+id/image1"
+            android:id="@+id/AIMLImage"
             android:layout_height="match_parent"
             android:src="@drawable/aiml">
         </ImageView>
