@@ -16,6 +16,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.ankita.studbud.AIMLActivity;
 import com.ankita.studbud.AndroidActivity;
+import com.ankita.studbud.ProgrammingActivity;
 import com.ankita.studbud.R;
 import com.ankita.studbud.Register_Student_Activity;
 
@@ -65,7 +66,7 @@ public class HomeFragment extends Fragment {
                 // Start new list activity
                 public void onClick(View v) {
                     Intent mainIntent = new Intent(getActivity(),
-                            AIMLActivity.class);
+                            ProgrammingActivity.class);
                     startActivity(mainIntent);
                 }
             });

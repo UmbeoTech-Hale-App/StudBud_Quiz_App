@@ -6,4 +6,113 @@
     android:layout_height="match_parent"
     tools:context=".AndroidActivity">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="30dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/course21"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksansregular"
+            android:paddingTop="150dp"
+            android:text="The Comprehensive Android Development Course"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textFontWeight="550">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="182dp"
+            android:text="Comprehensive course on Android app development tutorial designed for beginners to help them build 5 different android apps from scratch."
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="10dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/course21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="205dp"
+            android:text="ENROLL COURSE"
+            android:textAlignment="center"
+            android:textColor="#000">
+
+        </Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="30dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/course22"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksansregular"
+            android:paddingTop="150dp"
+            android:text="Learn Android Development for Beginners"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textFontWeight="550">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="170dp"
+            android:text="Get your inner developer out. Enroll today to take your life to the next step."
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="10dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/course22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="185dp"
+            android:text="ENROLL COURSE"
+            android:textAlignment="center"
+            android:textColor="#000">
+
+        </Button>
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
