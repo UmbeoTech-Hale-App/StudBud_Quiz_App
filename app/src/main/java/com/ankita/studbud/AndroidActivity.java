@@ -23,7 +23,7 @@ public class AndroidActivity extends AppCompatActivity {
         course21.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AndroidActivity.this, YoutubeActivity.class);
+                Intent intent = new Intent(AndroidActivity.this, Quiz_Android_A.class);
                 intent.putExtra("Course Id", "Android: Course 1");
                 startActivity(intent);
             }
@@ -31,7 +31,7 @@ public class AndroidActivity extends AppCompatActivity {
         course22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AndroidActivity.this, YoutubeActivity.class);
+                Intent intent = new Intent(AndroidActivity.this, Quiz2_activity.class);
                 intent.putExtra("Course Id", "Android: Course 2");
                 startActivity(intent);
             }
