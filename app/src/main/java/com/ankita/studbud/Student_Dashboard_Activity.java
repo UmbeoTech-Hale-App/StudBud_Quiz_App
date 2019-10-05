@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
+import com.ankita.studbud.ui.home.HomeFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -30,6 +31,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.ImageView;
 
 public class Student_Dashboard_Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -52,6 +54,13 @@ public class Student_Dashboard_Activity extends AppCompatActivity implements Nav
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        /*ImageView imageView=findViewById(R.id.imageView_home_direct);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new HomeFragment();
+            }
+        });*/
     }
 
     @Override
@@ -94,9 +103,15 @@ public class Student_Dashboard_Activity extends AppCompatActivity implements Nav
 
         Fragment fragment=null;
 
+
+
         if (id == R.id.profile_user) {
 
-        } else if (id == R.id.courses_Enrolled) {
+        }
+        else if(id == R.id.home_dashboard){
+            fragment = new HomeFragment();
+        }
+        else if (id == R.id.courses_Enrolled) {
             CardView card = findViewById(R.id.cardView_home_fragment);
             card.setVisibility(View.GONE);
             CardView card1 = findViewById(R.id.cardView2);
