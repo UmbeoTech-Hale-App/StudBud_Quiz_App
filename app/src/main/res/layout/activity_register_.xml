@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,6 +13,7 @@
 
         <TextView
             android:id="@+id/RegisterHeading"
+            android:textColor="#f1f1f1"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="48dp"
@@ -25,6 +27,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nameInput"
+            android:textColorHint="#f1f1f1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -37,6 +40,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/registerName"
+                android:textColorHint="#f1f1f1"
                 android:layout_width="match_parent"
                 android:layout_height="59dp"
                 android:drawableRight="@drawable/ic_font_download_black_24dp"
@@ -47,6 +51,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailInput"
+            android:textColorHint="#f1f1f1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -68,6 +73,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/phoneInput"
+            android:textColorHint="#f1f1f1"
             android:layout_width="0dp"
             android:layout_height="66dp"
             android:layout_marginStart="8dp"
@@ -79,6 +85,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/registerPhoneno"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter your phone no"

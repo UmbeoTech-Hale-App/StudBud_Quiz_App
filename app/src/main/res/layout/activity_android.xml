@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AndroidActivity">
+    tools:context=".AndroidActivity"
+    android:background="@drawable/bg">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
@@ -55,7 +56,9 @@
             android:layout_marginTop="205dp"
             android:text="ENROLL COURSE"
             android:textAlignment="center"
-            android:textColor="#000">
+            android:textColor="#000"
+            android:background="#80deea"
+            >
 
         </Button>
 
@@ -92,6 +95,7 @@
         </TextView>
 
         <TextView
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="170dp"
@@ -104,13 +108,17 @@
 
         <Button
             android:id="@+id/course22"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="185dp"
+            android:alpha="0.5"
+            android:background="@drawable/bg"
             android:text="ENROLL COURSE"
             android:textAlignment="center"
-            android:textColor="#000">
+            android:textColor="#000"
+            android:textSize="20dp">
 
         </Button>
     </androidx.cardview.widget.CardView>
