@@ -34,7 +34,7 @@
             android:alpha="0.7"
             android:layout_marginTop="103dp"
             android:textFontWeight="550"
-            android:paddingLeft="80dp"
+            android:textAlignment="center"
             android:textColor="#000"
             android:textSize="20dp"
             android:fontFamily="@font/worksansregular"
@@ -49,7 +49,6 @@
         android:layout_width="match_parent"
         android:layout_height="130dp"
         app:cardCornerRadius="10dp"
-
         android:layout_margin="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,9 +70,9 @@
             android:alpha="0.7"
             android:layout_marginTop="104dp"
             android:textFontWeight="550"
-            android:paddingLeft="120dp"
             android:textColor="#000"
             android:textSize="20dp"
+            android:textAlignment="center"
             android:fontFamily="@font/worksansregular"
             android:text="Android">
 
@@ -106,7 +105,7 @@
             android:alpha="0.7"
             android:layout_marginTop="104dp"
             android:textFontWeight="550"
-            android:paddingLeft="60dp"
+            android:textAlignment="center"
             android:textColor="#000"
             android:textSize="20dp"
             android:fontFamily="@font/worksansregular"
@@ -115,5 +114,40 @@
         </TextView>
 
     </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/CompanyImage"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"
+            android:src="@drawable/images">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:alpha="0.7"
+            android:layout_marginTop="104dp"
+            android:textFontWeight="550"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/worksansregular"
+            android:text="Company Based Package"/>
+
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
