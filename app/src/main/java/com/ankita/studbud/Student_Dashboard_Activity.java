@@ -140,8 +140,10 @@ public class Student_Dashboard_Activity extends AppCompatActivity implements Nav
             card.setVisibility(View.GONE);
             CardView card1 = findViewById(R.id.cardView2);
             CardView card2 = findViewById(R.id.cardView3);
+            CardView card3= findViewById(R.id.cardView4);
             card1.setVisibility(View.GONE);
             card2.setVisibility(View.GONE);
+            card3.setVisibility(View.GONE);
             fragment=new grievances();
         }
         else if (id==R.id.logout){
