@@ -13,6 +13,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.ankita.studbud.ui.home.HomeFragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -43,8 +44,6 @@ public class Quiz2_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz2_activity);
 
-
-
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         mDatabase =FirebaseDatabase.getInstance();
@@ -64,16 +63,12 @@ public class Quiz2_activity extends AppCompatActivity {
         radioGroup3 = (RadioGroup) findViewById(R.id.question2);
         radioGroup4 = (RadioGroup) findViewById(R.id.question4);
 
-
-
         btnDisplay = (Button) findViewById(R.id.submit);
 
         btnDisplay.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-
-
 
                 mRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -95,11 +90,15 @@ public class Quiz2_activity extends AppCompatActivity {
 
                         }
                         if(quiz2_score==4){
-                            Intent intent = new Intent(Quiz2_activity.this,YoutubeActivity.class);
+                            Toast.makeText(getApplicationContext(),"Out of Score: Score = "+quiz2_score,Toast.LENGTH_LONG).show();
+                            quiz2_score=0;
+                            Intent intent = new Intent(Quiz2_activity.this, HomeFragment.class);
                             startActivity(intent);
                         }
                         else{
-                            Toast.makeText(getApplicationContext(),"Insufficient score : score = "+quiz2_score, Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"Insufficient Score : Score = "+quiz2_score, Toast.LENGTH_LONG).show();
+                            quiz2_score=0;
+                            Intent intent = new Intent(Quiz2_activity.this,HomeFragment.class);
                         }
 
                         mRef1.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/AND_Course2").setValue(Integer.toString(quiz2_score));
