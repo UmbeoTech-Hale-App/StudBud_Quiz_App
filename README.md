@@ -1,4 +1,4 @@
-##The Online Learning Portal
+#StudBud
 
 ### Features
 
