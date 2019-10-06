@@ -23,6 +23,7 @@ public class HomeFragment extends Fragment {
     ImageView aiMl;
     ImageView android;
     ImageView progLang;
+    ImageView companyBased;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -64,6 +65,16 @@ public class HomeFragment extends Fragment {
                     Intent mainIntent = new Intent(getActivity(),
                             ProgrammingActivity.class);
                     startActivity(mainIntent);
+                }
+            });
+            companyBased = (ImageView)getView().findViewById(R.id.CompanyImage);
+
+            companyBased.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                   /* Intent mainIntent = new Intent(getActivity(),
+                            .class);
+                    startActivity(mainIntent);*/
                 }
             });
         }
