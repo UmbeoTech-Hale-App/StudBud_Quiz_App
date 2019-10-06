@@ -98,20 +98,20 @@ public class Quiz_Android_A extends AppCompatActivity {
                         }
                         if(quiz2_score==4){
                             Toast.makeText(getApplicationContext(),"Out of Score : Score = "+quiz2_score,Toast.LENGTH_LONG).show();
-                            quiz2_score=0;
+
                             Intent intent = new Intent(Quiz_Android_A.this,YoutubeActivity.class);
                             startActivity(intent);
                         }
                         else{
 
                             Toast.makeText(getApplicationContext(),"Insufficient Score : Score = "+quiz2_score,Toast.LENGTH_LONG).show();
-                            quiz2_score=0;
-                            Intent intent=new Intent(Quiz_Android_A.this, HomeFragment.class);
+
+                            Intent intent=new Intent(Quiz_Android_A.this, YoutubeActivity.class);
                             startActivity(intent);
                         }
 
                         mRef1.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/AND_Course1").setValue(Integer.toString(quiz2_score));
-
+                        quiz2_score=0;
 
 
                     }

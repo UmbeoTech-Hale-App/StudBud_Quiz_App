@@ -91,18 +91,19 @@ public class Quiz2_activity extends AppCompatActivity {
                         }
                         if(quiz2_score==4){
                             Toast.makeText(getApplicationContext(),"Out of Score: Score = "+quiz2_score,Toast.LENGTH_LONG).show();
-                            quiz2_score=0;
-                            Intent intent = new Intent(Quiz2_activity.this, HomeFragment.class);
+
+                            Intent intent = new Intent(Quiz2_activity.this, Student_Dashboard_Activity.class);
                             startActivity(intent);
                         }
                         else{
                             Toast.makeText(getApplicationContext(),"Insufficient Score : Score = "+quiz2_score, Toast.LENGTH_LONG).show();
-                            quiz2_score=0;
-                            Intent intent = new Intent(Quiz2_activity.this,HomeFragment.class);
+
+                            Intent intent1 = new Intent(Quiz2_activity.this,Student_Dashboard_Activity.class);
+                            startActivity(intent1);
                         }
 
                         mRef1.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/AND_Course2").setValue(Integer.toString(quiz2_score));
-
+                        quiz2_score=0;
 
 
                     }

@@ -77,8 +77,10 @@ public class Profile_fragment extends Fragment {
 
                         name.setText(data.get("Name"));
                         username.setText(data.get("Email id"));
-                        tag1.setText("Score for Quiz one : "+data.get("AND_Course1"));
-                        tag2.setText("Score of Quiz two : "+data.get("AND_Course2"));
+                        String score1= data.get("AND_Course1").toString();
+                        String score2=data.get("AND_Course2").toString();
+                        tag1.setText("Score for Quiz one : "+score1);
+                        tag2.setText("Score of Quiz two : "+score2);
                         tag3.setText("Email : "+data.get("Email id"));
                         tag4.setText("Username : "+data.get("Name"));
 
