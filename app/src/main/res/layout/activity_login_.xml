@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toregister"
         android:background="#2196f3"
         android:shadowColor="#f1f1f1"
-        android:shadowRadius="5dp"/>
+        />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailinput"
