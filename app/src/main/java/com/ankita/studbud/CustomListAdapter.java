@@ -56,6 +56,13 @@ public class CustomListAdapter extends BaseAdapter {
         textViewItemName.setText(currentItem.getCourseName());
         textViewItemDescription.setText(currentItem.getCourseDescription());
 
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
         // returns the view for the current row
         return convertView;
     }
