@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login_Activity"
-    android:background="@drawable/bg">
+    android:background="@drawable/bg1">
 
     <TextView
-        android:textColor="#f1f1f1"
+        android:textColor="#000000"
         android:id="@+id/textView"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
 
     <TextView
         android:id="@+id/toregister"
-        android:textColor="#f1f1f1"
+        android:textColor="#000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
@@ -44,7 +44,7 @@
 
     <Button
         android:id="@+id/loginButn"
-        android:textColor="#f1f1f1"
+        android:textColor="#000000"
         android:textSize="20dp"
         android:layout_width="205dp"
         android:layout_height="0dp"
@@ -61,8 +61,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailinput"
-        android:textColorHint="#f1f1f1"
-        android:textColor="#f1f1f1"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -75,7 +75,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailid"
-            android:textColorHint="#f1f1f1"
+            android:textColorHint="#000000"
             android:layout_width="match_parent"
             android:layout_height="59dp"
             android:hint="Email Id"
@@ -84,8 +84,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/loginpassword"
-        android:textColorHint="#f1f1f1"
-        android:textColor="#f1f1f1"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -97,8 +97,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
-            android:textColorHint="#f1f1f1"
-            android:textColor="#f1f1f1"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="Enter Your Password"
@@ -107,8 +107,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:textColorHint="#f1f1f1"
-        android:textColor="#f1f1f1"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
         android:layout_width="0dp"
         android:layout_height="66dp"
         android:layout_marginStart="8dp"
@@ -120,8 +120,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/loginphoneno"
-            android:textColorHint="#f1f1f1"
-            android:textColor="#f1f1f1"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone No"
