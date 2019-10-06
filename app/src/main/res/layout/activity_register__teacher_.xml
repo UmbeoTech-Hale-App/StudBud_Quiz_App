@@ -8,7 +8,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".HelperRegistrationActivity">
+        tools:context=".HelperRegistrationActivity"
+        android:background="@drawable/bg">
 
         <TextView
             android:id="@+id/RegisterHeading"
@@ -21,7 +22,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#f1f1f1"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nameInput_Teach"
@@ -33,11 +35,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
+            android:textColorHint="#f1f1f1"
             app:layout_constraintTop_toBottomOf="@id/RegisterHeading">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/registerName_Teach"
                 android:layout_width="match_parent"
+                android:textColorHint="#f1f1f1"
                 android:layout_height="59dp"
                 android:drawableRight="@drawable/ic_font_download_black_24dp"
                 android:hint="Enter your name"
@@ -49,6 +53,7 @@
             android:id="@+id/emailInput_Teach"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColorHint="#f1f1f1"
             android:layout_marginStart="8dp"
             android:layout_marginTop="21dp"
             android:layout_marginEnd="8dp"
@@ -58,6 +63,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailid_Teach"
+                android:textColorHint="#f1f1f1"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:drawableRight="@drawable/ic_email_black_24dp"
@@ -67,6 +73,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:textColorHint="#f1f1f1"
             android:id="@+id/phoneInput_Teach"
             android:layout_width="0dp"
             android:layout_height="66dp"
@@ -79,6 +86,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/registerPhoneno_Teach"
+                android:textColorHint="#f1f1f1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter your phone no"
@@ -89,6 +97,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordInput_Teach"
+            android:textColorHint="#f1f1f1"
             android:layout_width="0dp"
             android:layout_height="66dp"
             android:layout_marginStart="8dp"
@@ -103,6 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter password here"
+                android:textColorHint="#f1f1f1"
                 android:drawableRight="@drawable/ic_lock_outline_black_24dp"
                 android:paddingRight="5dp"
                 android:inputType="textPassword" />
