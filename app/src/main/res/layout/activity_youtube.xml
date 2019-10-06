@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
 
         android:layout_height="0dp"
+        android:layout_marginBottom="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -31,7 +32,37 @@
         app:layout_constraintVertical_bias="0.0">
 
 
-
     </ListView>
+
+    <Button
+        android:id="@+id/Quiz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="54dp"
+        android:text="Quiz1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CourseList"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Quiz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_marginBottom="53dp"
+        android:text="Quiz2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Quiz1"
+        app:layout_constraintTop_toBottomOf="@+id/CourseList" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

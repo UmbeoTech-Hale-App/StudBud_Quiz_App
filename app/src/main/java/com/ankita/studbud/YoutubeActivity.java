@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.SearchView;
@@ -36,6 +37,8 @@ public class YoutubeActivity extends YouTubeBaseActivity implements SearchView.O
 
     private SearchView searchView;
     private ListView courseListView;
+    private Button quiz1;
+    private Button quiz2;
 
    // ArrayList<String> titles=new ArrayList<String>();
     ArrayList <String> links = new ArrayList<String>();
@@ -50,7 +53,8 @@ public class YoutubeActivity extends YouTubeBaseActivity implements SearchView.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_youtube);
 
-
+        quiz1 = (Button)findViewById(R.id.Quiz1);
+        quiz2 = (Button)findViewById(R.id.Quiz2);
         mDatabase = FirebaseDatabase.getInstance();
         mFirebaseAuth= FirebaseAuth.getInstance();
         mRef=mDatabase.getReference("Course").child("Android").child("Course1");
@@ -123,6 +127,20 @@ public class YoutubeActivity extends YouTubeBaseActivity implements SearchView.O
             }
         });
 
+        quiz1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(YoutubeActivity.this,Quiz_Android_A.class);
+                startActivity(intent);
+            }
+        });
+        quiz2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(YoutubeActivity.this,Quiz2_activity.class);
+                startActivity(intent);
+            }
+        });
 
     }
     public void playVideo(final String videoId, YouTubePlayerView youTubePlayerView) {
